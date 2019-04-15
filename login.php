@@ -5,6 +5,7 @@ define('__CONFIG__', true);
 // Require the config
 require_once "inc/config.php";
 
+Page::ForceDashboard();
 ?>
 
 <!DOCTYPE html>
@@ -44,6 +45,8 @@ require_once "inc/config.php";
                     </div>
                 </div>
 
+                <div class="uk-margin uk-alert uk-alert-danger js-error" style='display: none;'></div>
+
                 <div class="uk-margin">
                     <button class="uk-button uk-button-default" type="submit">Login</button>
                 </div>
@@ -54,5 +57,4 @@ require_once "inc/config.php";
 
     <?php require_once "inc/footer.php"; ?>
 </body>
-
 </html>
