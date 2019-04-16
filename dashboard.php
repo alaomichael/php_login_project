@@ -27,6 +27,7 @@ $User = new User($_SESSION['user_id']);
 </head>
 
 <body>
+
     <div class="uk-section uk-container">
         <h2>Dashboard</h2>
         <p>Hello <?php echo $User->email; ?>, you registered at <?php echo $User->reg_time; ?></p>
@@ -49,4 +50,5 @@ $User = new User($_SESSION['user_id']);
 
     <?php require_once "inc/footer.php"; ?>
 </body>
+
 </html>
