@@ -32,7 +32,7 @@ DROP TABLE IF EXISTS `users`;
 CREATE TABLE `users` (
   `user_id` int(5) UNSIGNED NOT NULL COMMENT 'User id',
   `email` varchar(190) COLLATE utf8mb4_unicode_ci DEFAULT NULL COMMENT 'User email address',
-  `password` varchar(190) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `password` varchar(190) COLLATE utf8mb4_unicode_ci NOT NULL COMMENT 'User password',
   `reg_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT 'Time and date the user registered'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci COMMENT='Users table';
 

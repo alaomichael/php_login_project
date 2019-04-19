@@ -22,7 +22,7 @@ $User = new User($_SESSION['user_id']);
 
     <title>User Dashboard</title>
 
-    <base href="/" />
+    <base href="/php_login_course/" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.24/css/uikit.min.css" />
 </head>
 

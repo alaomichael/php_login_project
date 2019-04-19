@@ -1,6 +1,6 @@
 <?php
 
-// If there is no constant defined called __CONFIG__, do not load this file 
+// If there is no constant defined called __CONFIG__, do not load this file
 if(!defined('__CONFIG__')) {
 	exit('You do not have a config file');
 }
@@ -32,7 +32,7 @@ class User {
 		} else {
 			// No user.
 			// Redirect to to logout.
-			header("Location: /logout.php"); exit;
+			header( "Location: /logout.php"); exit;
 		}
 	}
 
@@ -43,8 +43,8 @@ class User {
 
 		// echo $this->email; // The current email address
 		// echo $this->user_id; // The existing user id
-		
-		// $this->con->prepare("...")		
+
+		// $this->con->prepare("...")
 	}
 
 
@@ -52,7 +52,7 @@ class User {
 
 		$con = DB::getConnection();
 
-		// Make sure the user does not exist. 
+		// Make sure the user does not exist.
 		$email = (string) Filter::String( $email );
 
 		$findUser = $con->prepare("SELECT user_id, password FROM users WHERE email = LOWER(:email) LIMIT 1");

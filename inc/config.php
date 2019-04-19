@@ -24,4 +24,5 @@
 	include_once "functions.php";
 
 	$con = DB::getConnection();
+
 ?>

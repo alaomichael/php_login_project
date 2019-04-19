@@ -1,12 +1,12 @@
 <?php
 
-// If there is no constant defined called __CONFIG__, do not load this file 
+// If there is no constant defined called __CONFIG__, do not load this file
 if(!defined('__CONFIG__')) {
 	exit('You do not have a config file');
 }
 
 class Filter {
-	
+
 	/**
 	 *  @param	string	$string		String to filter before putting inside InnoDB
 	 *  @return            			Filters and returns a valid string to put into the Database.
@@ -21,7 +21,7 @@ class Filter {
 		}
 		return $string;
 	}
-	
+
 	/**
 	 *  @param	string	$email		Email to filter before putting inside InnoDB
 	 *  @return            			Filters and returns a valid or invalid email address

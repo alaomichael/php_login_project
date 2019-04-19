@@ -1,10 +1,10 @@
-<?php 
+<?php
 
 	// Allow the config
 	define('__CONFIG__', true);
 
 	// Require the config
-	require_once "../inc/config.php"; 
+	require_once "../inc/config.php";
 
 	if($_SERVER['REQUEST_METHOD'] == 'POST') {
 		// Always return JSON format
@@ -14,6 +14,13 @@
 
 		$email = Filter::String( $_POST['email'] );
 		$password = $_POST['password'];
+
+	/* 	// Make sure the user does not exist
+		$findUser = $con->prepare("SELECT user_id, password FROM users WHERE email = LOWER(:email) LIMIT 1");
+		$findUser->bindParam(':email', $email,  PDO::PARAM_STR);
+		$findUser->execute();
+
+		if($findUser -> rowCount() == 1) */
 
 		$user_found = User::Find($email, true);
 
