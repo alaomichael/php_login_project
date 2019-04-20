@@ -22,7 +22,7 @@ $User = new User($_SESSION['user_id']);
 
     <title>User Dashboard</title>
 
-    <base href="/php_login_course/" />
+    <base href="/" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.24/css/uikit.min.css" />
 </head>
 
@@ -31,7 +31,7 @@ $User = new User($_SESSION['user_id']);
     <div class="uk-section uk-container">
         <h2>Dashboard</h2>
         <p>Hello <?php echo $User->email; ?>, you registered at <?php echo $User->reg_time; ?></p>
-        <p><a href="/logout.php">Logout</a></p>
+        <p><a href="/php_login_course/logout.php">Logout</a></p>
         <p>Ideas for extending this system:</p>
         <ul>
             <li>NEW FEEDS</li>

@@ -29,8 +29,8 @@ require_once "inc/config.php";
         echo date("Y m d");
         ?>
         <p>
-            <a href="/login.php">Login</a>
-            <a href="/register.php">Register</a>
+            <a href="/php_login_course/login.php">Login</a>
+            <a href="/php_login_course/register.php">Register</a>
         </p>
     </div>
 

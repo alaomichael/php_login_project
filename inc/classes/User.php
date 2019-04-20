@@ -32,7 +32,7 @@ class User {
 		} else {
 			// No user.
 			// Redirect to to logout.
-			header( "Location: /logout.php"); exit;
+			header( "Location: /php_login_course/logout.php"); exit;
 		}
 	}
 
